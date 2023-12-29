@@ -2,9 +2,9 @@ import java.util.Scanner;
 public class LibraryManagementSystem {
     public static void main(String[] args) {
         Library library = new Library();
-        library.addBook(new Book("Python", "David Beazley"));
-        library.addBook(new Book("C Programming", "Dennis M. Ritchie"));
-        library.addBook(new Book("Junglebook", "Rudyard Kipling."));
+        library.addBook(new Book("Accounts", "Miker Piper"));
+        library.addBook(new Book("Java Programming", "Kathy Sierra"));
+        library.addBook(new Book("HarryPotter", "JK Rowling."));
 
         Scanner scanner = new Scanner(System.in);
 
@@ -18,7 +18,7 @@ public class LibraryManagementSystem {
             System.out.print("Select an option: ");
 
             int choice = scanner.nextInt();
-            scanner.nextLine();  // Consume the newline character
+            scanner.nextLine();
 
             switch (choice) {
                 case 1:
